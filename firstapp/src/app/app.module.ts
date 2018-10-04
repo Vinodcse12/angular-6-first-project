@@ -7,10 +7,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyContainerComponent } from './components/body-container/body-container.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { AlgoFirstComponent } from './components/algo-first/algo-first.component';
 
 const route : Routes = [
   { path : 'home', component : HomeComponent },
-  { path : 'about', component : AboutComponent} 
+  { path : 'about', component : AboutComponent},
+  { path : 'firstAlgo', component : AlgoFirstComponent}
 ]
 
 @NgModule({
@@ -19,7 +21,8 @@ const route : Routes = [
     HeaderComponent,
     BodyContainerComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AlgoFirstComponent
   ],
   imports: [
     BrowserModule,
