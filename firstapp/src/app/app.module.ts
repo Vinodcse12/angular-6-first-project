@@ -8,11 +8,13 @@ import { BodyContainerComponent } from './components/body-container/body-contain
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { AlgoFirstComponent } from './components/algo-first/algo-first.component';
+import { AlgoSecondComponent } from './components/algo-second/algo-second.component';
 
 const route : Routes = [
   { path : 'home', component : HomeComponent },
   { path : 'about', component : AboutComponent},
-  { path : 'firstAlgo', component : AlgoFirstComponent}
+  { path : 'firstAlgo', component : AlgoFirstComponent },
+  { path : 'secondAlgo', component : AlgoSecondComponent }
 ]
 
 @NgModule({
@@ -22,7 +24,8 @@ const route : Routes = [
     BodyContainerComponent,
     HomeComponent,
     AboutComponent,
-    AlgoFirstComponent
+    AlgoFirstComponent,
+    AlgoSecondComponent
   ],
   imports: [
     BrowserModule,
